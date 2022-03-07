@@ -7,5 +7,5 @@ void multiples (int& sum, int x, int n)
  if(n < 1)
     return;
   sum += x*n;
-  multiplies (sum, x, n-1);
+  multiples (sum, x, n-1);
 }
