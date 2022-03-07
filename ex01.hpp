@@ -6,7 +6,10 @@ template <typename T>
 void multiples(T& sum, T x, int n)
 {
   if(n < 1)
+  {
+    sum++;
     return;
+  }
   sum += x*n;
   multiples (sum, x, n-1);
 }
